@@ -1,0 +1,44 @@
+{% extends 'base/main.html' %} 
+{% block content %} 
+{% load static %}
+    <main style="margin-top:100px;">
+        <div class="services-section">
+            <div class="services">
+                <img src="{% static 'images/costruction.jpg' %}" alt="">
+                <h3>Construction Solutions</h3>
+                <p>We manufacture industrial masks and hydraulic filters specifically designed for the building and construction industry. Additionally, 
+                we offer air, oil, fuel, and hydraulic filters suitable for heavy machinery such as excavators, graders, bulldozers, and compactors used in this sector.</p>
+            </div>
+            <div class="services">
+                <img src="{% static 'images/agricultural.jpg' %}" alt="">
+                <h3>Agricultural Solutions</h3>
+                <p>Our air, oil, and fuel filters are designed to boost gas mileage, enhance acceleration, 
+                    improve fuel efficiency, lower emissions, and extend engine life.</p>
+            </div>
+            <div class="services">
+                <img src="{% static 'images/healthcare.jpg'  %}" alt="">
+                <h3>Hosipital/Healthcare Solutions</h3>
+                <p>In this industry, maintaining purified air devoid of viruses and bacteria is crucial to minimize cross infection risks. 
+                We provide filters tailored for hospitals, healthcare facilities, and the pharmaceutical sector. 
+                Our offerings include pre-filters and HEPA filters, essential for ensuring the pristine air quality necessary in these sensitive environments.</p>
+            </div>
+            <div class="services">
+                <img src="{% static 'images/automotive.jpg' %}" alt="">
+                <h3>Automotive Solutions</h3>
+                <p>
+                    Our air, oil, and fuel filters improve gas mileage, boost acceleration, 
+                    enhance fuel efficiency, reduce emissions, and prolong engine life.</p>
+            </div>
+            <div class="services">
+                <img src="{% static 'images/industrial2.jpg' %}" alt="">
+                <h3>Industrial Filtration Solutions</h3>
+                <p>
+                    Air pollution levels inside industrial buildings, especially in manufacturing plants or chemical processing facilities, can often surpass those outdoors. 
+                    Our industrial filters are specifically engineered to efficiently eliminate contaminating particles from the air and other gases. 
+                    This includes filter bags tailored for diverse industries such as milling, cement production, and metal smelting. 
+                    Additionally, our dust mask filters offer an optimal solution for industrial environments characterized by high levels of airborne dust.</p>
+            </div>
+        </div>
+    </main>
+    
+{% endblock %}

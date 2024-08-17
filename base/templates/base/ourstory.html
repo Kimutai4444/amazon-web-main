@@ -1,0 +1,29 @@
+{% extends 'base/main.html' %}
+{% block content %} 
+{% load static %}
+    <div class="container">
+        <div class="image">
+            <img src="{% static 'images/OurStoryImage.jpeg' %}" alt="Amazon Kenya Limited">
+        </div>
+        <div class="content">
+            <h1>We are manufacturers and suppliers <br>of filtration solutions.</h1>
+            <p>
+                Amazon Filtrations is a renowned leader in the field of filtration solutions, 
+                providing a broad range of filters designed for various industries such as food and agriculture, mining, construction, cement, 
+                metal smelting, healthcare and pharmaceuticals, chemicals, and automobiles. Founded in the 2018, 
+                Amazon Filtrations excels in producing and distributing both automotive and industrial filters, continuously enhancing our offerings to meet unique client needs.
+            </p>
+            <p>
+                Our extensive product lineup includes automobile filters, air filters, fuel filters, oil filters, hydraulic filters, bag filters for dust and liquid filtration, HEPA filters, panel filters, and pocket filters for cleanroom ventilation. Dedicated to environmental sustainability, Amazon Filtrations plays a crucial role in fostering a cleaner environment through effective filtration solutions across diverse sectors.
+            </p>
+            <p>
+                We are proud to be ISO 80002:2020 certified, upholding the highest standards of quality,
+                efficiency, and customer satisfaction. With a commitment to delivering superior products and outstanding service,
+                Amazon Filtrations has established lasting partnerships with leading companies in Kenya and the broader East African region. Discover the excellence of Amazon Filtrations, 
+                branded as Amazon<sup></sup> Filters.
+            </p>
+            <a href="{% url 'contact' %}" class="button">CONTACT US</a>
+        </div>
+    </div>
+    
+{% endblock content %}

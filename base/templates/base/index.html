@@ -1,0 +1,57 @@
+{% extends 'base/main.html' %} 
+{% block content %} 
+{% load static %}
+<section class="below-navbar-section">
+    <div class="my-section">
+         
+        <div class="image-slider-set">
+            <figure>
+                <img class="img-1" src="{% static 'images/AmasonBackground.jpg' %}" alt="">
+                <img class="img-1" src="{% static 'images/airfilters.jpg' %}" alt="">
+                <img class="img-1" src="{% static 'images/oilfilters.jpg' %}" alt="">
+
+            </figure>
+            
+        </div>
+        <div class="section-description">
+            <div class="company-logo">
+                <img src="{% static 'images/filter.jpg' %}" alt="Company Logo">
+            </div>
+            <div class="slogan">
+                <p>FILTRATION <br>
+                SOLUTIONS FOR ALL <br>
+                MACHINES & <br>
+                EQUIPMENT</p>
+            </div>
+        </div>
+    </div>
+</section>
+<main>
+    <div class="products">
+        <section id="our-story">
+        <img src="{% static 'images/ourstory.jpg' %}" alt="">
+        <h3>Our Story</h3>
+        </section>
+        <section id="what-we-do">
+            <img src="{% static 'images/whatwedo.jpg' %}" alt="">
+            <h3>What We Offer</h3>
+        </section>
+        <section id="our-products">
+            <img src="{% static 'images/products.jpg' %}" alt="">
+            <h3>Our Products</h3>
+        </section>
+    </div>
+    <section id="our-content">
+        <h3>Top-Tier Vehicle and Machine Filters: Essential for Optimal Performance</h3>
+        <h4>Enhanced Performance</h4>
+        <p>Picture this: You’re in your workshop, fine-tuning vehicles, when you decide to switch to high-performance air filters. The change is astonishing! Instantly, your engine feels smoother, more responsive, and you even notice a slight increase in fuel efficiency. It’s like giving your vehicle a breath of fresh air!</p>
+        <h4>Prolonged Lifespan</h4>
+        <p>We all want longevity for our vehicles and equipment, right? Superior filters can assist with that too. By blocking more dirt, debris, and other contaminants, they help reduce wear and tear on your engine and parts. It’s like shielding your engine with armor to protect it from harmful elements.</p>
+        <h4>Choosing the Right Filter</h4>
+        <p>Fit is Crucial: When selecting high-performance filters, one size does not fit all. Ensure you choose the correct filter for your specific make and model. You don’t want to end up with a filter that doesn’t quite fit or perform as expected.</p>
+        <h4>Care and Replacement</h4>
+        <p>Regular Attention: Like anything else, your filters require care and attention too. Regular checks and maintenance can help catch any problems early and keep your engine running smoothly. And don’t forget about replacement intervals! It’s easy to overlook, but replacing old filters with new ones can make a significant difference.</p>
+        <p>So, there you have it, folks! High-performance vehicle and machinery filters are the unsung heroes in maintaining your ride or equipment in excellent condition. Whether you’re a car enthusiast, an experienced mechanic, or a machine engineer, investing in quality filters is a smart move. Trust me, your engine will appreciate it.</p>
+    </section>
+</main>
+{% endblock content %}

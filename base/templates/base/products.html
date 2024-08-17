@@ -1,0 +1,35 @@
+{% extends 'base/main.html' %} 
+{% block content %} 
+{% load static %}
+    <main>
+        <div class="products-section">
+            <div class="product">
+                <img src="{% static 'images/airfilters.jpg' %}" alt="">
+                <h3>Air Filters</h3>
+                <p>Amazon Filtration offers a diverse selection of air filters, featuring end caps made from polyurethane, plastic, or metal. These filters effectively block dirt, dust, and other contaminants from entering the engines of vehicles or machinery. Our air filters are suitable for a variety of engines, including those in small vehicles, large and small trucks, lorries, compressors, generators, forklifts, and construction equipment, among many others.</p>
+            </div>
+            <div class="product">
+                <img src="{% static 'images/fuelfilters.jpg' %}" alt="">
+                <h3>Fuel Filters</h3>
+                <p>Amazon Filtration's fuel filters eliminate dust and moisture from fuel, safeguarding the engine’s injection pump and nozzle from wear and clogging. We offer both spin-on and cartridge fuel filters.</p>
+            </div>
+            <div class="product">
+                <img src="{% static 'images/oilfilters.jpg' %}" alt="">
+                <h3>Oil Filters</h3>
+                <p>Amazon Filtration's oil filters remove impurities from engine and hydraulic oils. Driving with a dirty oil filter can harm or destroy your car’s engine. We provide a wide array of oil filters for vehicle and machinery engines, including hydraulic filters.</p>
+            </div>
+            <div class="product">
+                <img src="{% static 'images/industrial.jpg' %}" alt="">
+                <h3>Industrial and Ventilation Filters</h3>
+                <p>Our product range includes filters used in industrial manufacturing processes across various industries such as cement, lime, plaster, ceramics, plastic, mining, steel, metal, pharmaceuticals, food, grain, and chemicals. We manufacture filters that deliver clean air solutions, including HEPA filters, pre-filters, dust panel ventilation filters, and pocket filters.</p>
+            </div>
+            <div class="product">
+                <img src="{% static 'images/Specializedfiltration.jpg' %}" alt="">
+                <h3>Specialized Filtration Solutions</h3>
+                <p>We offer customized filtration solutions to meet our clients’ unique needs. Our services include evaluating filtration requirements, designing and creating technical drawings, manufacturing specialized components, installing and assessing performance, and providing ongoing client support.</p>
+            </div>
+        </div>
+    </main>
+    
+    
+{% endblock %}

@@ -1,0 +1,646 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+ 
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+  font-family: Roboto,-apple-system, -apple-system, BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial , sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+nav {
+  align-items: center;
+  justify-content: space-between;
+  margin-left:150px;
+  margin-right: 150px;
+}
+.open-menu{
+  display: none;
+}
+.close-menu{
+  display: none;
+}
+
+.logo img {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  height: 70px; 
+  width: 10%;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin: 0;
+}
+
+.nav-links li {
+  margin-left: 25px; 
+  font-style: inherit;
+  margin-bottom: 12px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: lighter;
+  color: blue;
+  position: relative; 
+  transition: all 0.4s ease-in-out;
+}
+
+.nav-links li a:hover {
+  color: rgb(245, 47, 47);
+}
+
+.nav-links li a:hover::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 1px; 
+  background-color: rgb(245, 47, 47);
+  left: 0;
+}
+
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 131px;
+  margin-right: 150px;
+  margin-left: 150px;
+}
+.contact-form{
+min-height: 50vh;
+}
+button:hover {
+background-color: #0056b3;
+}
+
+.image {
+  flex: 1;
+  padding: 10px;
+}
+
+.image img {
+  width: 100%;
+  height: 90vh;
+  margin-top: 30px;
+}
+
+.content {
+  flex: 2;
+  background-color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+.content h1 {
+  color: rgb(125, 125, 245);
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.content p {
+  color: #666;
+  line-height: 1.6;
+  font-size: 12px;
+  margin: 12px;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+footer {
+  background-color: #a768dd;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+footer p {
+  font-size: 11px;
+  /* margin-left: 150px; */
+}
+
+
+.my-section {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.company-logo img {
+  height: 100px;
+  margin-top: 80px;
+}
+
+.below-navbar-section {
+  margin-top: 131px;
+  margin-bottom: 100px;
+  height: 80vh;
+
+  background-size: cover;
+  /* background-image: url('images/AmasonBackground.jpg'); */
+  background-color: rgb(185, 167, 167);
+}
+
+.image-slider-set{
+  height: 80vh;
+  overflow: hidden;
+  /* background: linear-gradient(rgba(0, 0, 0, 0.679), rgba(0, 0, 0, 0.653),rgba(0, 0, 0, 0.82)); */
+  background-color:white;
+  position: relative;
+}
+.image-slider-set::after{
+  content:'';
+  background-color: black;
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:95%;
+  z-index: 2;
+  opacity: 0.8;
+}
+/* .image-slider-set::before{
+  content: "FILTRATION SOLUTIONS FOR ALL MACHINES & EQUIPMENT";
+  position:absolute;
+  z-index: 1000;
+  font-size: 34px;
+  font-weight: 600;
+} */
+.section-description{
+  position: absolute;
+  top:100px;
+  left:60px;
+  z-index: 5;
+  margin-right: 150px;
+  margin-left: 150px;
+
+}
+.image-slider-set figure{
+  display: flex;
+  position: relative;
+  width:400%;
+  height:100%;
+  margin:0;
+  left:0;
+  animation:20s slider infinite;
+}
+
+.image-slider-set figure img{
+  width:33%;
+  float:left;
+  height:76vh;
+
+}
+
+@keyframes slider {
+  0%{
+    left:0;
+
+  }
+  
+ 33%{
+  left:0;
+
+ }
+
+ 66%{
+  left:-133%;
+ }
+ 85%{
+  left:-133%;
+ }
+
+ 100%{
+  left:-266%;
+ }
+}
+.image-slider-set img{
+  width:100vw;
+  height:80vh;
+  object-fit: cover;
+  margin-left: 5px;
+  /* position:absolute; */
+}
+.slogan p {
+  padding: 0;
+  font-size: 44px;
+  font-weight: bold;
+  color: rgb(252, 250, 250);
+  font-family: 'Times New Roman', Times, serif;
+}
+
+footer {
+  background-color: #a768dd;
+  color: #fff;
+  /* padding: 1rem 0; */
+}
+
+#our-content {
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+h4 {
+  margin-bottom: 8px;
+  margin-top: 18px;
+  font-style: italic;
+}
+
+#our-content p {
+  font-weight: lighter;
+  font-size: 14px;
+}
+
+footer p {
+  font-size: 11px;
+  margin-left: 150px;
+}
+
+.products img {
+  width: 300px;
+  height: 150px;
+}
+
+.products {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.products h3 {
+  font-weight: lighter;
+  font-style: italic;
+  color: blue;
+}
+
+@media (max-width: 1200px) {
+  nav {
+      margin-left: 50px;
+      margin-right: 100px;
+  }
+
+  .my-section, #our-content, footer p, .products {
+      margin-left: 50px;
+      margin-right: 50px;
+  }
+}
+
+
+@media (max-width: 900px) {
+  nav {
+      margin-left: 20px;
+      margin-right: 50px;
+  }
+
+  .my-section, #our-content, footer p, .products {
+      margin-left: 20px;
+      margin-right: 20px;
+  }
+
+  .slogan p {
+      font-size: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+.open-menu{
+    display: block;
+  }
+  header {
+      height: auto;
+  }
+
+  nav {
+      flex-direction: column;
+      align-items: center;
+      margin-left: 0;
+      margin-right: 0;
+      height:0;
+      display: none;
+      transition:transform 0.5s ease 0s;
+      
+      
+      
+  }
+
+  .logo img {
+      margin: 0;
+      margin-top: 10px;
+  }
+
+  .nav-links {
+    display: block;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+  }
+
+  .nav-links li {
+      margin: 10px 0;
+  }
+  .below-navbar-section{
+    
+    background-image:url("../images/AmasonBackground.jpg") ;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* margin-bottom: 100px; */
+  }
+  .below-navbar-section::after{
+    content:'';
+    position: absolute;
+    width:100vw;
+    height:100%;
+    top:0;
+    left:0;
+    background: linear-gradient(rgba(0, 0, 0, 0.679), rgba(0, 0, 0, 0.653),rgba(0, 0, 0, 0.82));
+
+    
+  } 
+  .below-navbar-section .my-section{
+    width: 100%;
+    height: 100%;
+    
+  }
+  .below-navbar-section .my-section .image-slider-set{
+    display: none;
+  }
+  .below-navbar-section .my-section .section-description{
+    
+    left:0;
+    margin-left:10px;
+    
+  }
+
+  .my-section, .products, #our-content, footer p {
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+
+  .products {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .products section {
+      margin-bottom: 20px;
+  }
+
+  .slogan p {
+      font-size: 24px;
+  }
+
+  .company-logo img {
+      height: 80px;
+      margin-top: 20px;
+  }
+}
+.products-section {
+  margin-top: 131px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.product {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product h3 {
+  margin-top: 15px;
+  font-size: 18px;
+  color: blue;
+}
+
+.product p {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #555;
+}
+
+
+
+.menu-toggle {
+  width: 30px;
+  height: 20px;
+  display: none; 
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  display: none;
+}
+
+.bar {
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+  transition: all 0.3s ease;
+}
+
+.menu-toggle.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.open .bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.menu-toggle.open .bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+.nav-links.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center vertically */
+  background-color: #fff;
+  position: fixed; /* Fixed position to stay in place */
+  top: 0;
+  left: 0;
+  height: 100%; 
+  width: 100%;
+  z-index: 999;
+}
+
+
+@media (max-width: 1200px) {
+  nav {
+      margin-left: 50px;
+      margin-right: 100px;
+  }
+
+  .my-section,
+  #our-content,
+  footer p,
+  .products-section {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .nav-links {
+      flex-direction: column;
+      margin-top: 10px;
+  }
+
+  .nav-links.active {
+      display: flex; /* Show links when active */
+  }
+
+  .nav-links li {
+      margin: 10px 0;
+  }
+
+  .products-section {
+      margin-left: 20px;
+      margin-right: 20px;
+  }
+
+  .product {
+      padding: 15px;
+  }
+
+  .product h3 {
+      font-size: 16px;
+  }
+
+  .product p {
+      font-size: 13px;
+  }
+
+  .menu-toggle {
+      display: flex; /* Show the menu toggle on small screens */
+  }
+}
+
+.services-section {
+  margin-right: 150px;
+  margin-left: 150px;
+  margin-top: 131px;
+  align-items: flex-start;
+  display:flex ;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  min-height:75vh;
+ 
+}
+@media (max-width:850px) {
+.services-section{
+  justify-content: center;
+}
+}
+
+.services-section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 24px;
+}
+
+.services {
+margin:10px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  padding:4px;
+  width: 270px;
+  min-height:500px;
+  box-shadow: 1px 2px 1px 1px;
+  border-radius: 10px;
+}
+
+.services img {
+ width: 270px;
+ height: 200px;
+}
+
+@media (max-width:500px) {
+.services-section{
+  margin:auto;
+}
+
+.services{
+  width:260px;
+  
+}
+.services img{
+  width:260px;
+}
+}
+
+.services h3 {
+  margin-top: 10px;
+  font-size: 22px;
+  color: rgb(125, 125, 252);
+}
+
+.services p {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #555;
+}
+footer p {
+text-align: center;
+}
+

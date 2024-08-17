@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <title>Amazon Filtration Company</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="{% static 'images/AMAZONLOGO.jpeg' %}" alt="Company Logo" style="margin-left: 150px;">
+        </div>
+        <div class="open-menu" style="flex-direction: column; margin-bottom: 10px; line-height: 12px; font-weight: bold; cursor: pointer; margin-left: 30px;margin-right: 30px;; ">
+            ____ <br>
+            ____ <br>
+            ____ <br>
+            
+        </div>
+        <div class="close-menu" style=" width:20px; height:20px;text-align:center; cursor: pointer; float: right; border:1px solid red; border-radius: 50%;;">
+            X
+        </div>
+        <nav>
+            
+            <ul class="nav-links">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'products' %}">Our Products</a></li>
+                <li><a href="{% url 'services' %}">Services</a></li>
+                <li><a href="{% url 'about' %}">Our Story</a></li>
+                <li><a href="{% url 'contact' %}">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    {% block content %}{% endblock content %}
+    <footer>
+        <p>&copy; 2024 Amazon Filtration. All rights reserved.</p>
+    </footer>
+    <script>
+       const openMenu = document.querySelector('.open-menu')
+       const closeMenu = document.querySelector('.close-menu')
+       const nav = document.querySelector('nav')
+       openMenu.addEventListener('click', (e)=>{
+            nav.style.display ='block';
+            nav.style.height= '100%';
+            nav.style.transition = 'all 0.5s ease 0s;'
+            e.target.style.display= 'none';
+            closeMenu.style.display='block';
+            
+       })
+
+       closeMenu.addEventListener('click', (e)=>{
+            nav.style.display ='none';
+            nav.style.height= '0';
+            e.target.style.display= 'none';
+            openMenu.style.display='block';
+       })
+    </script>
+</body>
+</html>
